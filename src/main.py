@@ -4,8 +4,7 @@ Setup()
 import numpy as np
 import json
 from collections import namedtuple as ntuple
-from .AudioAnalyser import Analyser as AudioAnalyser
-from .TextAnalyser import Analyser as TextAnalyser
+from NEP import AudioAnalyser, TextAnalyser, VideoAnalyser
 
 # --- Core Data Structures ---
 EToken = ntuple(
