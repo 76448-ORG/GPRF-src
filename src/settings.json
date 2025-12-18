@@ -1,0 +1,40 @@
+{
+  "title": "GPRF Core",
+  "name": "GPR-Framework",
+  "fill_name": "Generative & Programmable Response Framework",
+  "project_id": "GPRF-Core-001",
+  "affective_model": {
+    "model_name": "roberta-base-jast",
+    "version": "1.0.3",
+    "dimensions": [
+      "Joy",
+      "Anger",
+      "Surprise",
+      "Trust"
+    ],
+    "policy_tuning": {
+      "strategy": "EWC",
+      "update_frequency": 1000,
+      "lambda_decay": 0.001
+    }
+  },
+  "domain_routing": {
+    "classifier_threshold": {
+    "joy": 0.4,
+    "anger": 1.5,
+    "surprise": 2.0,
+    "trust": 0.5
+  },
+    "specialized_domains": [
+      "Emotion Detection",
+      "Emotion Analysis",
+      "Emotion Vectorization",
+      "Emotional Artificial Intelligence (EAI)",
+      "Psychology"
+    ],
+    "default_domain": "GENERAL_QUERY"
+  },
+  "security": {
+    "max_payload_size_kb": 256
+  }
+}

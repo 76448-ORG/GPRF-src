@@ -1,0 +1,11 @@
+nltk
+fastapi
+uvicorn[standard]
+fuzzywuzzy
+python-dotenv
+pyspellchecker
+librosa
+praat-parselmouth
+numpy
+scipy
+python-multipart
